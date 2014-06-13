@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EasyScheduling - People from an Option</title>
+</head>
+<body>
+<h3>{$event}</h3>
+<h4>The {$count} guest(s) who selected <span class="easy">{$location} &nbsp;on &nbsp;{$start} &nbsp;@ &nbsp;{$start_time} to &nbsp;{$end} &nbsp;{$end_time}</span></h4>
+
+	<ul>
+	{foreach from=$members item=person}
+		<li>{$person.first_name} {$person.last_name}</li>
+	{/foreach}
+	</ul>
+</body>
+</html>

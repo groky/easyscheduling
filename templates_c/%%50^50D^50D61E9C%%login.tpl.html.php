@@ -1,0 +1,40 @@
+<?php /* Smarty version 2.6.26, created on 2010-07-09 09:00:44
+         compiled from login.tpl.html */ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>EasyScheduling - Login</title>
+</head>
+<body>
+<form method="post" action="?" enctype="multipart/form-data" name="login" id="login">
+<table class="form-table" border="0" >
+  <tr>
+    <td>
+      <h4>
+        Load an existing Profile
+      </h4>
+    </td>
+  </tr>
+  <tr>
+    <td><label>Email address</label></td>
+    <td><input type="text" name="email" value="<?php echo $this->_tpl_vars['email']; ?>
+" id="email-box" /></td>
+  </tr>
+  <tr>
+    <td><label>Password</label></td>
+    <td><input type="password" name="password" /> <span class="forgot"><a href="?page_name=p_f">Forgot password?</a></span></td>
+  </tr>
+   <tr>
+      <td></td>
+      <td>
+      	<input type="submit" value="login" name="login" />
+      </td>
+    </tr>
+    
+</table>
+<input type="hidden" name="page_name" value="l_o" />
+</form>
+</body>
+</html>

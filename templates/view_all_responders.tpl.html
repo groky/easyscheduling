@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$title}</title>
+</head>
+<body>
+    <h4>People who responded to <strong>{$event.event_name}</strong></h4>
+    <p>{$event.description}</p>
+<br/>
+<table class="body-table">
+
+	{assign var=i value=$i|default:0}
+	{foreach from=$responders item=r}
+
+	<tr
+	{if $i%2==0}
+		 class="alternate"
+	{/if}
+	>
+		<td>
+		<img class="emptylogo" src="images/minilogoblue.jpg"></img>
+			&nbsp;{$r.first_name}</td>
+		<td>{$r.last_name}</td>
+	</tr>
+
+	{assign var=i value=$i+1}
+	{/foreach}
+</table>
+</body>
+<p style="position:relative; left:570px;"><a href="?page_name=r_p&id={$event.id}&multi={$event.multi_day}"> &lt; &nbsp; Go Back to previous list</a></p>
+</html>

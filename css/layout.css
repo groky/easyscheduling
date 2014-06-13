@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+.corner_tl, .corner_t, .corner_tr, .corner_l, .corner_r, .corner_bl, .corner_b, .corner_br, .corner {
+    /*width: auto;*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+}
+
+.corner_t, .corner_l, .corner_r, .corner_b{
+    width:10px;
+    height:10px;
+}
+    
+.corner_tl, .corner_tr, .corner_bl,.corner_br{
+	height: 34px;
+    witdh:32px;
+}
+
+
+/*.corner_t {
+    /*
+        change this div to layout the whole box (width, height, float, margin, ...)
+        example lines:
+        width: 60%;
+        margin: 7px 35px 0px 1px
+        to change distance to content/text scroll to class ".corner" and change the padding
+    */
+ /*   top: 20px;
+    background-color: #FFFFFF;
+    background-image: url("../images/corner_border.png");
+    background-repeat: repeat-x;
+    background-position: top;
+}*/
+.corner_tl {
+
+    background-image: url("../images/corner_topleft.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+/*.corner_tr {
+    background-image: url("../images/corner_topright.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.corner_bl {
+    height: 100%;
+    background-image: url("../images/corner_bottomleft.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.corner_br {
+    height: 100%;
+    background-image: url("../images/corner_bottomright.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.corner_l {
+    height: 100%;
+    background-image: url("../images/corner_border.png");
+    background-repeat: repeat-y;
+    background-position: left;
+}
+.corner_r {
+    height: 100%;
+    background-image: url("images/corner_border.png");
+    background-repeat: repeat-y;
+    background-position: right;
+}
+.corner_b {
+    height: 100%;
+    background-image: url("../images/corner_border.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}*/

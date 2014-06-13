@@ -1,0 +1,53 @@
+<?php /* Smarty version 2.6.26, created on 2010-07-19 14:53:14
+         compiled from index.tpl.html */ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  	<meta name="keyword" content="easyscheduling.com.au, www.easyscheduling.com.au ,easy scheduling, meetings, 
+  									events, dates, birthdays, calendar, event, birthday, party, organise,
+  									organize, schedule, timetable, time, time table, easyscheduling.com,
+  									www.easyscheduling.com, roster" />
+    <link rel="Shortcut Icon" href="images/minilogoblue.jpg" ></link>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" ></link>
+    <link rel="stylesheet" type="text/css" href="./css/calendar.css" ></link>
+    <link rel="stylesheet" type="text/css" href="./js/clockpick/clockpick.css" ></link>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/calendar_eu.js"></script>
+    <script src="./js/clockpick/jquery.clockpick.js"></script>
+	<script src="./js/float.js"></script>
+	<script src="./js/ajax.js"></script>
+    <title>EasyScheduling</title>
+  </head>
+  <body>
+  <div>
+  
+  </div>
+	<div class="wrapper">
+  <div class="login-box">
+  <?php echo $this->_tpl_vars['top_menu']; ?>
+
+  </div>
+
+    <table>
+      <tr>
+        <td><img class="logo" src="images/banner.jpg"></img></td>
+      </tr>
+    </table>
+
+		<?php echo $this->_tpl_vars['contents']; ?>
+
+	
+	<div class="push"></div>
+	</div>	
+    <!-- The footer/ powered-by -->
+    
+    <div class="powered-by" id="powered-by">
+    	<ul>
+    	 	<li><a href="?page_name=c_t">Terms and Conditions</a> &copy; 2009</li>
+    		<li>Powered By <a href="?page_name=u_c">Grovers &amp; Meriaux</a></li>
+    	</ul>
+    </div>
+
+  </body>
+</html>

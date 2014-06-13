@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<br />
+<h4>{$title}</h4>
+
+<table class="body-table">
+<thead>
+<tr>
+	<th>Event Name</th>
+	<th>Description</th>
+	<th>Contact</th>
+</tr>
+</thead>
+<tbody>
+{assign var=i value=$i|default:0}
+{foreach from=$old_events item=event}
+	{if $i%2==0}
+		<tr class="alternate">
+	{else}
+		<tr>
+	{/if}
+		<td>{$event.event_name}</td>
+		<td>{$event.description}</td>
+		<td>{$event.contact_person}</td>
+	</tr>
+	{assign var=i value=$i+1}
+{/foreach}
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>EasyScheduling - Update Profile</title>
+</head>
+<body>
+<h4>{$title}</h4>
+<form action="?" method="post" enctype="multipart/form-data">
+<table class="form-table">
+	<tr>
+		<td><h4>Personal Information</h4></td>
+	</tr>
+	<tr>
+		<td><label>Name</label></td>
+		<td><input type="text" value="{$info.first_name}" name="info[name]"/></td>
+	</tr>
+	<tr>
+		<td><label>Last/Family Name</label></td>
+		<td><input type="text" value="{$info.last_name}" name="info[surname]" /></td>
+	</tr>
+	<tr>
+		<td><label>Email &nbsp; <p class="small-blue">(Changing this will change your login)</p></label></td>
+		<td><input type="text" value="{$info.email}" name="info[email]" id="email-box" /></td>
+	</tr>
+	
+	<tr>
+		<td><label>Organisation Name</label></td>
+		<td><input type="text" value="{$org_name}" name="info[organisation]" /></td>
+	</tr>
+	<tr>
+		<td><label>&nbsp;</label></td>
+		<td><input type="submit" value="update" name="update" /></td>
+	</tr>	
+	<tr>
+		<td><h4>Password Information</h4></td>
+		<td>Update your password information <a href="?page_name=p_p">here</a></td>
+	</tr>	
+</table>
+<input type="hidden" name="page_name" value="u_d" />
+</form>
+</body>
+</html>
